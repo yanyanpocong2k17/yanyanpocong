@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Project</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="christianbootstrap/bootstrap/css/bootstrap.css">
+<script type = "text/javascript" src = "christianpocongbootstrap/js/jquery-slim.min.js"></script>
+<script type = "text/javascript" src = "christianpocongbootstrap/js/popper.min.js"></script>
+<script type = "text/javascript" src = "christianpocongbootstrap/js/bootstrap.js"></script>
+<script src="christianpocongjavascript/Storage.js"></script>
+<link rel="stylesheet" href="christianpocongcss/StorageStyle.css">
+<link rel="stylesheet" href="christiancss/css1/style.css">
+<link rel="stylesheet" href="New folder1/2.css">
+<script src="New folder2/3.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<a class="navbar-brand">List Of Debt </a>
+    <ul class="navbar-nav mr-auto">
+      <td>
+       <a href="index.html"><input type=button value="Home"></a>
+      </td>
+	   <td>
+       <a href="create.html"><input type=button value="Create"></a>
+      </td>
+	  <td>
+       <a href="Storage.html"><input type=button value="Storage"></a>
+      </td>
+    </ul>
+
+  </div>
+</nav>
+
+
+
+<body>
+
+<body onload="doShowAll()">
+	<form name=ListOfDebt>
+		<div id="PlayArea">
+			<table>
+				<br>
+				<tr>
+
+					<b>Full name:</b><input type=text name=name>
+					<b>Address:</b><br><textarea name="data" cols="51" rows="2" id="data"></textarea>
+					</div>
+					<b>Date borrowed:</b><input id="borrowed" type="date">
+					<b>Promise payment:</b><input id="payment" type="date">
+					<b>Value:</b><input type=text name=commend>
+
+				</tr>
+
+				<tr>
+
+				    <input type=button value="Save"   onclick="SaveItem()">
+					 <input type=button value="Modify" onclick="ModifyItem()">
+
+
+				</tr>
+
+
+
+			</table>
+
+		</div>
+</form>
+</body>
+</html>

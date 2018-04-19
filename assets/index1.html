@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Project</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="christianbootstrap/bootstrap/css/bootstrap.css">
+<script type = "text/javascript" src = "christianpocongbootstrap/js/jquery-slim.min.js"></script>
+<script type = "text/javascript" src = "christianpocongbootstrap/js/popper.min.js"></script>
+<script type = "text/javascript" src = "christianpocongbootstrap/js/bootstrap.js"></script>
+<script src="christianpocongjavascript/Storage.js"></script>
+<link rel="stylesheet" href="christianpocongcss/StorageStyle.css">
+<link rel="stylesheet" href="christiancss/css1/style.css">
+<link rel="stylesheet" href="New folder1/2.css">
+<script src="New folder2/3.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<a class="navbar-brand">List Of Debt </a>
+    <ul class="navbar-nav mr-auto">
+      <td>
+       <a href="home.html"><input type=button value="Home"></a>
+      </td>
+	   <td>
+       <a href="create.html"><input type=button value="Create"></a>
+      </td>
+      <td>
+       <input type=button value="Modify" onclick="ModifyItem()">
+      </td>
+      <td>
+      <input type=button value="Remove" onclick="RemoveItem()">
+      </td>
+	  <td>
+       <a href="Storage.html"><input type=button value="Storage"></a>
+      </td>
+    </ul>
+
+  </div>
+</nav>
+
+
+
+<body>
+<div id="main">
+  <br><br><br><br><br><br><br><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#8594; open</span>
+</div>
+
+<body onload="doShowAll()">
+	<form name=ListOfDebt>
+		<div id="PlayArea">
+			<table>
+				<br>
+				<tr>
+
+					<b>Full name:</b><input type=text name=name>
+					<b>Address:</b><select id="data" class="form-control">
+					<option selected>Choose...</option>
+					<option>Oroquieta City</option>
+					<option>Dipolog City</option>
+					<option>Ozamiz City</option>
+					<option>Molave City</option>
+					<option>Zamboanga City</option>
+					<option>Zamboanga Del Sur City</option>
+					<option>Zamboanga Del Nurte City</option>
+					<option>Marawi</option>
+					<option>Davao City</option>
+					<option>Cagayan City</option>
+					<option>Pagadian City</option>
+					</select>
+					</div>
+					<b>Value:</b><input type=text name=commend>
+
+				</tr>
+				<tr>
+
+				     <center><input type=button value="Save"   onclick="SaveItem()"></center>
+
+				</tr>
+
+
+
+			</table>
+		</div>
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div id="items_table">
+			  			<h2>Storage</h2>
+			  			<table id=list></table>
+			  			<p>
+			  				<label><input type=button value="Clear" onclick="ClearAll()">
+			  					<i>* Removes all items</i></label>
+			  			</p>
+		</div>
+		</div>
+</form>
+</body>
+</html>

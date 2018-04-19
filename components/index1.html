@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>My Project</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="christianbootstrap/bootstrap/css/bootstrap.css">
+<script type = "text/javascript" src = "christianpocongbootstrap/js/jquery-slim.min.js"></script>
+
+<script type = "text/javascript" src = "christianpocongbootstrap/js/popper.min.js"></script>
+
+<script type = "text/javascript" src = "christianpocongbootstrap/js/bootstrap.js"></script>
+<script src="christianpocongjavascript/Storage.js"></script>
+<link rel="stylesheet" href="christianpocongcss/StorageStyle.css">
+<link rel="stylesheet" href="christiancss/css1/style.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<a class="navbar-brand">List Of Debt </a>
+    <ul class="navbar-nav mr-auto">
+      <td>
+       <input type=button value="Home" onclick="ModifyItem()">
+      </td>
+      <td>
+       <input type=button value="Modify" onclick="ModifyItem()">
+      </td>
+      <td>
+      <input type=button value="Remove" onclick="RemoveItem()">
+      </td>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" name="person" id="name" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+    </form>
+  </div>
+</nav>
+<body onload="doShowAll()">
+	<h1><center>List Of Dept</center></h1>
+	<form name=ListOfDebt>
+
+		<div id="PlayArea">
+			<table>
+
+				<tr>
+
+					<b>Name:</b><input type=text name=name>
+					<b>Phone#:</b><input type=text name=data>
+					<b>Commend#:</b><input type=text name=commend>
+
+				</tr>
+				<tr>
+					<td>
+				<input type=button value="Save"   onclick="SaveItem()">
+					</td>
+				</tr>
+
+
+
+			</table>
+		</div>
+
+		<div id="items_table">
+			<h2>Lest Of Dept</h2>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Removes all items</i></label>
+			</p>
+		</div>
+	</form>
+
+</body>
+</html>
